@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txi_img_size">64dp</dimen>
+    <dimen name="taxi_recycler_item_height">76dp</dimen>
+    <dimen name="taxi_item_margin">8dp</dimen>
+</resources>

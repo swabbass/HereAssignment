@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+   >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/txi_img_size"
+        android:layout_height="@dimen/txi_img_size"
+        android:minHeight="@dimen/txi_img_size"
+        android:minWidth="@dimen/txi_img_size"
+        android:layout_marginBottom="@dimen/taxi_item_margin"
+        android:layout_marginStart="@dimen/taxi_item_margin"
+        android:layout_marginTop="@dimen/taxi_item_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:textSize="16dp"
+        android:layout_marginStart="@dimen/taxi_item_margin"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginEnd="@dimen/taxi_item_margin"
+        app:layout_constraintRight_toLeftOf="@+id/etaTextView"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:text="cwecewvw vw v v wv ew v we v ewv we v ewv we v ewv ewvw" />
+
+    <TextView
+        android:id="@+id/etaTextView"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/taxi_item_margin"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:text="1h 59m 59s" />
+</android.support.constraint.ConstraintLayout>
